@@ -1,0 +1,136 @@
+{
+  "disease_key": "diabetes",
+  "disease_name": "Diabetes",
+  "selected_model": "Logistic Regression",
+  "total_samples": 1000,
+  "train_samples": 800,
+  "test_samples": 200,
+  "features": [
+    "pregnancies",
+    "glucose",
+    "blood_pressure",
+    "skin_thickness",
+    "insulin",
+    "bmi",
+    "diabetes_pedigree",
+    "age"
+  ],
+  "target": "target",
+  "metrics": {
+    "accuracy": 0.72,
+    "precision": 0.2917,
+    "recall": 0.8077,
+    "f1_score": 0.4286,
+    "roc_auc": 0.8329,
+    "confusion_matrix": [
+      [
+        123,
+        51
+      ],
+      [
+        5,
+        21
+      ]
+    ]
+  },
+  "all_models_comparison": {
+    "Random Forest": {
+      "accuracy": 0.855,
+      "precision": 0.4516,
+      "recall": 0.5385,
+      "f1_score": 0.4912,
+      "roc_auc": 0.7779,
+      "confusion_matrix": [
+        [
+          157,
+          17
+        ],
+        [
+          12,
+          14
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.825,
+      "precision": 0.3784,
+      "recall": 0.5385,
+      "f1_score": 0.4444,
+      "roc_auc": 0.7626,
+      "confusion_matrix": [
+        [
+          151,
+          23
+        ],
+        [
+          12,
+          14
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.72,
+      "precision": 0.2917,
+      "recall": 0.8077,
+      "f1_score": 0.4286,
+      "roc_auc": 0.8329,
+      "confusion_matrix": [
+        [
+          123,
+          51
+        ],
+        [
+          5,
+          21
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.68,
+      "precision": 0.25,
+      "recall": 0.7308,
+      "f1_score": 0.3725,
+      "roc_auc": 0.712,
+      "confusion_matrix": [
+        [
+          117,
+          57
+        ],
+        [
+          7,
+          19
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "glucose": 0.2791,
+    "blood_pressure": 0.1862,
+    "diabetes_pedigree": 0.1675,
+    "bmi": 0.1426,
+    "age": 0.1406,
+    "pregnancies": 0.0657,
+    "insulin": 0.0097,
+    "skin_thickness": 0.0086
+  },
+  "scaler_means": {
+    "pregnancies": 3.7075,
+    "glucose": 119.965,
+    "blood_pressure": 67.72,
+    "skin_thickness": 20.3175,
+    "insulin": 74.99375,
+    "bmi": 31.905,
+    "diabetes_pedigree": 0.48188374999999994,
+    "age": 33.27875
+  },
+  "scaler_scales": {
+    "pregnancies": 1.8565946649713287,
+    "glucose": 30.842645395620654,
+    "blood_pressure": 18.95637359834417,
+    "skin_thickness": 15.256775339173085,
+    "insulin": 70.85561876758611,
+    "bmi": 7.7193247761705175,
+    "diabetes_pedigree": 0.4538182595885026,
+    "age": 9.829854955059103
+  }
+}

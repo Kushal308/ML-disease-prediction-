@@ -1,0 +1,144 @@
+{
+  "disease_key": "stroke",
+  "disease_name": "Stroke",
+  "selected_model": "Logistic Regression",
+  "total_samples": 1200,
+  "train_samples": 960,
+  "test_samples": 240,
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "ever_married",
+    "work_type",
+    "residence_type",
+    "avg_glucose_level",
+    "bmi",
+    "smoking_status"
+  ],
+  "target": "target",
+  "metrics": {
+    "accuracy": 0.7833,
+    "precision": 0.1071,
+    "recall": 0.75,
+    "f1_score": 0.1875,
+    "roc_auc": 0.8173,
+    "confusion_matrix": [
+      [
+        182,
+        50
+      ],
+      [
+        2,
+        6
+      ]
+    ]
+  },
+  "all_models_comparison": {
+    "Random Forest": {
+      "accuracy": 0.8875,
+      "precision": 0.087,
+      "recall": 0.25,
+      "f1_score": 0.129,
+      "roc_auc": 0.6794,
+      "confusion_matrix": [
+        [
+          211,
+          21
+        ],
+        [
+          6,
+          2
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9125,
+      "precision": 0.1176,
+      "recall": 0.25,
+      "f1_score": 0.16,
+      "roc_auc": 0.6395,
+      "confusion_matrix": [
+        [
+          217,
+          15
+        ],
+        [
+          6,
+          2
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7833,
+      "precision": 0.1071,
+      "recall": 0.75,
+      "f1_score": 0.1875,
+      "roc_auc": 0.8173,
+      "confusion_matrix": [
+        [
+          182,
+          50
+        ],
+        [
+          2,
+          6
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.7125,
+      "precision": 0.0448,
+      "recall": 0.375,
+      "f1_score": 0.08,
+      "roc_auc": 0.5824,
+      "confusion_matrix": [
+        [
+          168,
+          64
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "age": 0.4439,
+    "hypertension": 0.1384,
+    "heart_disease": 0.1061,
+    "avg_glucose_level": 0.0991,
+    "bmi": 0.0864,
+    "gender": 0.0443,
+    "ever_married": 0.0337,
+    "smoking_status": 0.021,
+    "work_type": 0.0181,
+    "residence_type": 0.009
+  },
+  "scaler_means": {
+    "gender": 0.425,
+    "age": 52.91979166666667,
+    "hypertension": 0.22604166666666667,
+    "heart_disease": 0.13333333333333333,
+    "ever_married": 0.7989583333333333,
+    "work_type": 0.7510416666666667,
+    "residence_type": 0.5208333333333334,
+    "avg_glucose_level": 110.07611458333332,
+    "bmi": 28.83354166666667,
+    "smoking_status": 1.4125
+  },
+  "scaler_scales": {
+    "gender": 0.4943429983321297,
+    "age": 17.033020136094397,
+    "hypertension": 0.4182664600433821,
+    "heart_disease": 0.33993463423951903,
+    "ever_married": 0.4007791348493027,
+    "work_type": 1.057463040298441,
+    "residence_type": 0.4995657836784083,
+    "avg_glucose_level": 41.47635441338077,
+    "bmi": 7.346831797216894,
+    "smoking_status": 1.270928958150953
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "disease_key": "heart",
+  "disease_name": "Heart Disease",
+  "selected_model": "Logistic Regression",
+  "total_samples": 1000,
+  "train_samples": 800,
+  "test_samples": 200,
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "target": "target",
+  "metrics": {
+    "accuracy": 0.825,
+    "precision": 0.7683,
+    "recall": 0.7975,
+    "f1_score": 0.7826,
+    "roc_auc": 0.8839,
+    "confusion_matrix": [
+      [
+        102,
+        19
+      ],
+      [
+        16,
+        63
+      ]
+    ]
+  },
+  "all_models_comparison": {
+    "Random Forest": {
+      "accuracy": 0.805,
+      "precision": 0.7703,
+      "recall": 0.7215,
+      "f1_score": 0.7451,
+      "roc_auc": 0.8623,
+      "confusion_matrix": [
+        [
+          104,
+          17
+        ],
+        [
+          22,
+          57
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.77,
+      "precision": 0.7391,
+      "recall": 0.6456,
+      "f1_score": 0.6892,
+      "roc_auc": 0.8282,
+      "confusion_matrix": [
+        [
+          103,
+          18
+        ],
+        [
+          28,
+          51
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.825,
+      "precision": 0.7683,
+      "recall": 0.7975,
+      "f1_score": 0.7826,
+      "roc_auc": 0.8839,
+      "confusion_matrix": [
+        [
+          102,
+          19
+        ],
+        [
+          16,
+          63
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.625,
+      "precision": 0.525,
+      "recall": 0.5316,
+      "f1_score": 0.5283,
+      "roc_auc": 0.6785,
+      "confusion_matrix": [
+        [
+          83,
+          38
+        ],
+        [
+          37,
+          42
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "ca": 0.146,
+    "oldpeak": 0.1429,
+    "thalach": 0.1255,
+    "exang": 0.1009,
+    "chol": 0.091,
+    "thal": 0.085,
+    "cp": 0.0718,
+    "sex": 0.0687,
+    "trestbps": 0.0484,
+    "age": 0.0386,
+    "restecg": 0.0303,
+    "slope": 0.0257,
+    "fbs": 0.0252
+  },
+  "scaler_means": {
+    "age": 53.92625,
+    "sex": 0.68,
+    "cp": 0.9175,
+    "trestbps": 131.01875,
+    "chol": 242.9325,
+    "fbs": 0.1525,
+    "restecg": 0.50875,
+    "thalach": 148.10125,
+    "exang": 0.34125,
+    "oldpeak": 1.017125,
+    "slope": 1.40625,
+    "ca": 0.69,
+    "thal": 2.33
+  },
+  "scaler_scales": {
+    "age": 8.797773066947112,
+    "sex": 0.46647615158762407,
+    "cp": 1.0115303999386276,
+    "trestbps": 17.577923609957463,
+    "chol": 50.05894469273199,
+    "fbs": 0.35950486783908786,
+    "restecg": 0.5337822004338474,
+    "thalach": 23.3143946616141,
+    "exang": 0.4741291358902129,
+    "oldpeak": 0.997318522025436,
+    "slope": 0.6113190145087914,
+    "ca": 0.9348261870529729,
+    "thal": 0.5775811631277461
+  }
+}

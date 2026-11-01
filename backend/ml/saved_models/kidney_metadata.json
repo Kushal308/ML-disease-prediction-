@@ -1,0 +1,168 @@
+{
+  "disease_key": "kidney",
+  "disease_name": "Chronic Kidney Disease",
+  "selected_model": "Logistic Regression",
+  "total_samples": 1000,
+  "train_samples": 800,
+  "test_samples": 200,
+  "features": [
+    "age",
+    "blood_pressure",
+    "specific_gravity",
+    "albumin",
+    "sugar",
+    "blood_glucose_random",
+    "blood_urea",
+    "serum_creatinine",
+    "sodium",
+    "potassium",
+    "hemoglobin",
+    "packed_cell_volume",
+    "white_blood_cell_count",
+    "red_blood_cell_count",
+    "hypertension",
+    "diabetes_mellitus"
+  ],
+  "target": "target",
+  "metrics": {
+    "accuracy": 0.855,
+    "precision": 0.8556,
+    "recall": 0.828,
+    "f1_score": 0.8415,
+    "roc_auc": 0.9365,
+    "confusion_matrix": [
+      [
+        94,
+        13
+      ],
+      [
+        16,
+        77
+      ]
+    ]
+  },
+  "all_models_comparison": {
+    "Random Forest": {
+      "accuracy": 0.775,
+      "precision": 0.7927,
+      "recall": 0.6989,
+      "f1_score": 0.7429,
+      "roc_auc": 0.88,
+      "confusion_matrix": [
+        [
+          90,
+          17
+        ],
+        [
+          28,
+          65
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.785,
+      "precision": 0.7976,
+      "recall": 0.7204,
+      "f1_score": 0.7571,
+      "roc_auc": 0.8797,
+      "confusion_matrix": [
+        [
+          90,
+          17
+        ],
+        [
+          26,
+          67
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.855,
+      "precision": 0.8556,
+      "recall": 0.828,
+      "f1_score": 0.8415,
+      "roc_auc": 0.9365,
+      "confusion_matrix": [
+        [
+          94,
+          13
+        ],
+        [
+          16,
+          77
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.725,
+      "precision": 0.7375,
+      "recall": 0.6344,
+      "f1_score": 0.6821,
+      "roc_auc": 0.7733,
+      "confusion_matrix": [
+        [
+          86,
+          21
+        ],
+        [
+          34,
+          59
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "serum_creatinine": 0.32,
+    "hemoglobin": 0.122,
+    "albumin": 0.1091,
+    "specific_gravity": 0.1009,
+    "age": 0.068,
+    "hypertension": 0.0616,
+    "blood_pressure": 0.0527,
+    "sugar": 0.0463,
+    "diabetes_mellitus": 0.0418,
+    "blood_urea": 0.0398,
+    "potassium": 0.0158,
+    "sodium": 0.006,
+    "white_blood_cell_count": 0.006,
+    "red_blood_cell_count": 0.0055,
+    "blood_glucose_random": 0.0036,
+    "packed_cell_volume": 0.0009
+  },
+  "scaler_means": {
+    "age": 51.55375,
+    "blood_pressure": 77.1725,
+    "specific_gravity": 1.0163874999999998,
+    "albumin": 0.91125,
+    "sugar": 0.6,
+    "blood_glucose_random": 153.42625,
+    "blood_urea": 60.51125,
+    "serum_creatinine": 2.403775,
+    "sodium": 137.0875,
+    "potassium": 5.167750000000001,
+    "hemoglobin": 12.38175,
+    "packed_cell_volume": 37.90875,
+    "white_blood_cell_count": 8420.965,
+    "red_blood_cell_count": 4.721625,
+    "hypertension": 0.38125,
+    "diabetes_mellitus": 0.35875
+  },
+  "scaler_scales": {
+    "age": 16.8083196940533,
+    "blood_pressure": 13.201524296459104,
+    "specific_gravity": 0.004969893736288545,
+    "albumin": 1.3003358941058267,
+    "sugar": 1.2257650672131262,
+    "blood_glucose_random": 66.4702720089026,
+    "blood_urea": 43.26479369461387,
+    "serum_creatinine": 2.3211770181041773,
+    "sodium": 10.832928678339943,
+    "potassium": 2.5234272205672985,
+    "hemoglobin": 2.7661104347982928,
+    "packed_cell_volume": 8.450025055436225,
+    "white_blood_cell_count": 2882.324950239823,
+    "red_blood_cell_count": 1.0001474188213455,
+    "hypertension": 0.4856937692620732,
+    "diabetes_mellitus": 0.4796336492574306
+  }
+}

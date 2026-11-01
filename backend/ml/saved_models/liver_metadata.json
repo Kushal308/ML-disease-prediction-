@@ -1,0 +1,144 @@
+{
+  "disease_key": "liver",
+  "disease_name": "Liver Disease",
+  "selected_model": "Logistic Regression",
+  "total_samples": 1000,
+  "train_samples": 800,
+  "test_samples": 200,
+  "features": [
+    "age",
+    "gender",
+    "total_bilirubin",
+    "direct_bilirubin",
+    "alkaline_phosphotase",
+    "alamine_aminotransferase",
+    "aspartate_aminotransferase",
+    "total_proteins",
+    "albumin",
+    "albumin_and_globulin_ratio"
+  ],
+  "target": "target",
+  "metrics": {
+    "accuracy": 0.88,
+    "precision": 0.9115,
+    "recall": 0.8803,
+    "f1_score": 0.8957,
+    "roc_auc": 0.956,
+    "confusion_matrix": [
+      [
+        73,
+        10
+      ],
+      [
+        14,
+        103
+      ]
+    ]
+  },
+  "all_models_comparison": {
+    "Random Forest": {
+      "accuracy": 0.815,
+      "precision": 0.8704,
+      "recall": 0.8034,
+      "f1_score": 0.8356,
+      "roc_auc": 0.9226,
+      "confusion_matrix": [
+        [
+          69,
+          14
+        ],
+        [
+          23,
+          94
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.83,
+      "precision": 0.8547,
+      "recall": 0.8547,
+      "f1_score": 0.8547,
+      "roc_auc": 0.9308,
+      "confusion_matrix": [
+        [
+          66,
+          17
+        ],
+        [
+          17,
+          100
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.88,
+      "precision": 0.9115,
+      "recall": 0.8803,
+      "f1_score": 0.8957,
+      "roc_auc": 0.956,
+      "confusion_matrix": [
+        [
+          73,
+          10
+        ],
+        [
+          14,
+          103
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.76,
+      "precision": 0.8876,
+      "recall": 0.6752,
+      "f1_score": 0.767,
+      "roc_auc": 0.8699,
+      "confusion_matrix": [
+        [
+          73,
+          10
+        ],
+        [
+          38,
+          79
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "aspartate_aminotransferase": 0.2816,
+    "alamine_aminotransferase": 0.2075,
+    "direct_bilirubin": 0.1925,
+    "total_bilirubin": 0.1118,
+    "alkaline_phosphotase": 0.0839,
+    "albumin": 0.0518,
+    "albumin_and_globulin_ratio": 0.0413,
+    "age": 0.0242,
+    "gender": 0.0036,
+    "total_proteins": 0.0017
+  },
+  "scaler_means": {
+    "age": 44.3625,
+    "gender": 0.74875,
+    "total_bilirubin": 3.2898749999999994,
+    "direct_bilirubin": 1.488625,
+    "alkaline_phosphotase": 310.065,
+    "alamine_aminotransferase": 118.9475,
+    "aspartate_aminotransferase": 176.1425,
+    "total_proteins": 6.4135,
+    "albumin": 3.155375,
+    "albumin_and_globulin_ratio": 1.1280375
+  },
+  "scaler_scales": {
+    "age": 15.42501519448198,
+    "gender": 0.43373198809864133,
+    "total_bilirubin": 3.1170033661154424,
+    "direct_bilirubin": 1.4780166133623127,
+    "alkaline_phosphotase": 207.3744277267571,
+    "alamine_aminotransferase": 125.34559124177444,
+    "aspartate_aminotransferase": 202.23796551031162,
+    "total_proteins": 1.139020522203178,
+    "albumin": 0.8258456934409721,
+    "albumin_and_globulin_ratio": 0.6880156419688073
+  }
+}
